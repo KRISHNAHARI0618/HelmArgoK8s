@@ -1,0 +1,7 @@
+---
+- name: Installing Nginx
+  hosts: Web
+  become: true
+  become_user: ubuntu
+  roles:
+    ansible-roles

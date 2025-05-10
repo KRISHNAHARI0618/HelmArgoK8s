@@ -1,0 +1,10 @@
+---
+# 
+- name: register checking or id creation
+  hosts: all
+  become: true
+  become_user: ubuntu
+  vars:
+  vars_files:
+  vars_prompt:
+  

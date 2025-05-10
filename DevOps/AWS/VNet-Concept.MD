@@ -1,0 +1,12 @@
+# Virtual Networking 
+  - Subnets - 3
+    - Subnet-1 For Web apps
+    - Subnet-2 For App Logic
+    - Subnet-3 For Data Bases
+  - Firewall
+  - Bastion Server
+  - Application Load Balancer(L7)
+  - Waf Policies
+  - Network Security Groups
+  - Application Security Groups
+  - Network Load Balancer(L4)

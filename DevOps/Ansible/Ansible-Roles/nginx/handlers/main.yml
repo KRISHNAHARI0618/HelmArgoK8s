@@ -1,0 +1,8 @@
+---
+# handlers file for nginx
+# Which Can Be Notified by Tasks to be executed
+
+- name: nginx-restarts
+  service:
+    name: nginx
+    state: restarted

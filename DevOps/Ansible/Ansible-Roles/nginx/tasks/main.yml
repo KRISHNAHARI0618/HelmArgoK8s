@@ -1,0 +1,18 @@
+---
+# tasks file for nginx
+- name: Nginx Installtion
+  apt:
+    name: "{{ nginx_package }}"
+    state: installed
+    update_cache: true
+
+- name: Start the service
+  service:
+    name: "{{ nginx_package }}"
+    state: started
+
+- name: copying files
+  templates:
+    src: /files/index.html/
+    dest: /usr/share/nginx/html/
+  notify: nginx-restarts

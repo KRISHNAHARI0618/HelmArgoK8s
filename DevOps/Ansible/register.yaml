@@ -1,0 +1,17 @@
+---
+- name: nginx
+  tasks:
+    - name: register_output
+      command: id roboshop
+      register: output
+      ignore_errors: true
+    - name: printing output
+      debug:
+        msg: "{{  output }}"
+    - name: checking status
+      debug:
+        msg: "{{ out.rc }}"
+    - name: creation of id
+      user:
+        name: roboshop
+      when: out.rc != 0

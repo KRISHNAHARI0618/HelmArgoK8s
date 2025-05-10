@@ -1,0 +1,6 @@
+---
+# defaults file for nginx
+# Here We can store default variables
+nginx_listen_port: 80
+nginx_server_name: localhost
+nginx_root: /var/www/html
